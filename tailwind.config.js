@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         'image-patter': "url('../../institute.jpg')",
+        'image-children': "url('../../background.jpg')",
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

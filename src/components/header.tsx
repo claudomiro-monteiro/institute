@@ -1,4 +1,4 @@
-import { X } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import { NavLink } from './nav-link'
 
 export function Header() {
@@ -7,15 +7,17 @@ export function Header() {
   // }
 
   return (
-    <div className='sticky top-0 z-10 flex h-20 w-full items-center justify-between bg-blue-400 px-10 sm:h-24'>
+    <div className='sticky top-0 z-10 flex h-20 w-full items-center justify-between bg-blue-900 px-10 sm:h-24'>
       <a href='/'>
-        <img src='/vite.svg' alt='' className='h-12 sm:h-16' />
+        {/* <img src='/institute.png' alt='' className='h-12 sm:h-16' /> */}
+        <span className='font-semibold text-xl text-yellow-500'>INSTITUTO</span>
+        <h1 className='font-bold text-white'>SÃO GABRIEL</h1>
       </a>
-      <X className='flex sm:hidden' />
-      <nav className='hidden h-full items-center sm:flex'>
-        <NavLink href='/'>Home</NavLink>
-        <NavLink href='/#services'>Services</NavLink>
-        <NavLink href='/#about'>About</NavLink>
+      <Menu className='flex sm:hidden' />
+      <nav className='hidden h-full items-center text-blue-50 sm:flex'>
+        <NavLink href='/'>Inicio</NavLink>
+        {/* <NavLink href='/#services'>Serviços</NavLink> */}
+        <NavLink href='/#about'>Sobre nós</NavLink>
         <NavLink href='/#contact'>Contato</NavLink>
       </nav>
     </div>

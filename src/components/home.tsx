@@ -9,10 +9,9 @@ export function Home() {
         </span>
         <h1 className='py-6 text-center font-bold underline'>Visão</h1>
         <article className='px-10 text-center'>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea officia
-          soluta saepe? Doloribus, suscipit quo quis est iure aspernatur ipsam
-          tempora dolorem officiis repellat rem accusamus facilis temporibus
-          expedita natus!
+          O Instituto São Gabriel é uma instituição SEM FINS LUCRATIVOS
+          administrada pela Associação Madre Vilac, enquadrada como entidade
+          privada, com princípios católicos.
         </article>
       </div>
       <div className='rounded-md bg-slate-50/10 p-6 backdrop-blur-md'>
@@ -21,10 +20,9 @@ export function Home() {
         </span>
         <h1 className='p-6 text-center font-bold underline'>Missão</h1>
         <article className='px-10 text-center'>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-          repudiandae recusandae odit atque ipsa maxime minus? Provident iure
-          autem iste quae maxime qui ipsam doloribus, eum distinctio, quam quasi
-          fuga?
+          Formar estudantes íntegros, empáticos e responsáveis, que tenham
+          vontade de aprender e exercer seu papel enquanto cidadãos e cristãos
+          comprometidos.
         </article>
       </div>
       <div className='rounded-md bg-slate-50/10 p-6 backdrop-blur-md'>
@@ -33,10 +31,9 @@ export function Home() {
         </span>
         <h1 className='p-6 text-center font-bold underline'>Valores</h1>
         <article className='px-10 text-center'>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut enim
-          dolore necessitatibus delectus qui, vel eaque libero provident
-          quibusdam commodi impedit quis porro accusantium nobis laboriosam.
-          Iste modi repellendus illum.
+          O Instituto São Gabriel se insere no campo educacional do país como um
+          instrumento de transformação social, tendo com princípio fundamental o
+          desenvolvimento humano integral de seus alunos.
         </article>
       </div>
     </div>
