@@ -4,7 +4,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useEffect } from 'react'
 import { phoneNumberMask } from '../utils/phone'
 import { Form } from './forms'
-import { AtSign, Mail, Phone, User } from 'lucide-react'
+import { AtSign, Mail, Phone, SendHorizonal, User } from 'lucide-react'
 
 const createFormSchema = z.object({
   name: z
@@ -119,9 +119,10 @@ export function Contact() {
           <button
             type='submit'
             form='sendcontact'
-            className='py2 mt-4 flex items-center justify-center gap-2 rounded-md border border-red-500 bg-red-600 px-8 py-2 font-semibold text-white'
+            className='py2 mt-4 flex items-center justify-center gap-2 rounded-md border border-blue-500 bg-blue-900 px-8 py-2 font-semibold text-white'
           >
             Enviar
+            <SendHorizonal className='size-5' />
           </button>
         </FormProvider>
       </div>
