@@ -3,8 +3,9 @@ import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useEffect } from 'react'
 import { phoneNumberMask } from '../utils/phone'
-import { Form } from './forms'
+import { Form } from '../components/forms'
 import { AtSign, Mail, Phone, SendHorizonal, User } from 'lucide-react'
+import { Helmet } from 'react-helmet-async'
 
 const createFormSchema = z.object({
   name: z
@@ -49,7 +50,11 @@ export function Contact() {
   }
 
   return (
-    <div className='flex min-h-screen w-full flex-col justify-center'>
+    <div
+      id='contact'
+      className='flex min-h-screen w-full flex-col justify-center'
+    >
+      <Helmet title='Contato' />
       <h1 className='w-full py-10 text-center text-3xl'>Contato</h1>
 
       <div className='flex flex-col items-center'>

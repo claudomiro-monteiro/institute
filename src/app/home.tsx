@@ -8,7 +8,7 @@ export function Home() {
           <Eye size={96} />
         </span>
         <h1 className='py-6 text-center font-bold underline'>Visão</h1>
-        <article className='px-10 text-center'>
+        <article className='text-center sm:px-10'>
           O Instituto São Gabriel é uma instituição SEM FINS LUCRATIVOS
           administrada pela Associação Madre Vilac, enquadrada como entidade
           privada, com princípios católicos.
@@ -19,7 +19,7 @@ export function Home() {
           <Goal size={96} />
         </span>
         <h1 className='p-6 text-center font-bold underline'>Missão</h1>
-        <article className='px-10 text-center'>
+        <article className='text-center sm:px-10'>
           Formar estudantes íntegros, empáticos e responsáveis, que tenham
           vontade de aprender e exercer seu papel enquanto cidadãos e cristãos
           comprometidos.
@@ -30,7 +30,7 @@ export function Home() {
           <HandHeart size={96} />
         </span>
         <h1 className='p-6 text-center font-bold underline'>Valores</h1>
-        <article className='px-10 text-center'>
+        <article className='text-center sm:px-10'>
           O Instituto São Gabriel se insere no campo educacional do país como um
           instrumento de transformação social, tendo com princípio fundamental o
           desenvolvimento humano integral de seus alunos.

@@ -1,10 +1,13 @@
+import { Helmet } from 'react-helmet-async'
+
 export function About() {
   return (
     <div
       id='about'
       className='flex w-full scroll-mt-20 flex-col items-center justify-center space-y-8 p-10'
     >
-      <h1 className='w-full text-start'>Como surgiu</h1>
+      <Helmet title='Sobre nós' />
+      <h1 className='w-full text-center text-3xl'>Como surgiu</h1>
 
       <article className='grid grid-cols-1 gap-8 lg:grid-cols-2 '>
         {/* <div className=''> */}
