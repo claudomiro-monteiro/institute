@@ -15,7 +15,7 @@ export function Field(props: FieldProps) {
   return (
     <FileInputContext.Provider value={{ files, onFileSelected: setFiles }}>
       <div
-        className='flex w-full items-center gap-2 rounded-lg border border-zinc-600 px-3 py-2 shadow-sm focus-within:border-zinc-300 focus-within:ring-2 focus-within:ring-zinc-200'
+        className='flex w-full items-center gap-2 rounded-lg border border-blue-950 px-3 py-2 shadow-sm focus-within:border-blue-300 focus-within:ring-2 focus-within:ring-blue-200'
         {...props}
       />
     </FileInputContext.Provider>

@@ -48,7 +48,7 @@ export function Sidebar() {
     <div ref={container}>
       <nav
         id='sidebar'
-        className='fixed right-0 bottom-0 left-0 z-0 flex h-[calc(100%-5rem)] flex-col justify-center bg-blue-500'
+        className='fixed right-0 bottom-0 left-0 z-0 flex h-[calc(100%-5rem)] flex-col justify-center bg-blue-400'
       >
         <SidebarNavLink onClick={handleToggleMenu} href='/'>
           Inicio

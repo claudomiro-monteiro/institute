@@ -19,7 +19,7 @@ export function Header() {
 
   return (
     <ToggleContext.Provider value={{ isMenuOpen, handleToggleMenu }}>
-      <header className='sticky top-0 z-10 flex h-20 w-full items-center justify-between bg-blue-900 px-10 sm:h-24'>
+      <header className='sticky top-0 z-10 flex h-20 w-full items-center justify-between bg-blue-900 px-6 sm:h-24'>
         <a href='/'>
           {/* <img src='/institute.png' alt='' className='h-12 sm:h-16' /> */}
           <span className='font-semibold text-xl text-yellow-500'>

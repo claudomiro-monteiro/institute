@@ -5,7 +5,6 @@ import { useEffect } from 'react'
 import { phoneNumberMask } from '../utils/phone'
 import { Form } from '../components/forms'
 import { AtSign, Mail, Phone, SendHorizonal, User } from 'lucide-react'
-import { Helmet } from 'react-helmet-async'
 
 const createFormSchema = z.object({
   name: z
@@ -50,87 +49,77 @@ export function Contact() {
   }
 
   return (
-    <div
-      id='contact'
-      className='flex min-h-screen w-full flex-col justify-center'
-    >
-      <Helmet title='Contato' />
-      <h1 className='w-full py-10 text-center text-3xl'>Contato</h1>
+    <>
+      <div
+        id='contact'
+        className='flex min-h-screen w-full flex-col justify-center'
+      >
+        <h1 className='w-full py-10 text-center text-3xl'>Contato</h1>
 
-      <div className='flex flex-col items-center'>
-        <FormProvider {...createForm}>
-          <form
-            id='sendcontact'
-            onSubmit={handleSubmit(newContact)}
-            className='flex w-2/3 flex-col gap-4'
-          >
-            <Form.Field>
-              <Form.Prefix>
-                <User className='size-5' />
-              </Form.Prefix>
-              <Form.Input
-                type='name'
-                name='name'
-                placeholder='Digite seu nome.'
-              />
-            </Form.Field>
-            <Form.ErrorMessage field='name' />
-            <Form.Field>
-              <Form.Prefix>
-                <AtSign className='size-5' />
-              </Form.Prefix>
-              <Form.Input
-                type='email'
-                name='email'
-                placeholder='Digite seu email.'
-              />
-            </Form.Field>
-            <Form.ErrorMessage field='email' />
-            <Form.Field>
-              <Form.Prefix>
-                <Phone className='size-5' />
-              </Form.Prefix>
-              <Form.Input
-                type='cellphone'
-                name='cellphone'
-                placeholder='Digite seu celular.'
-              />
-            </Form.Field>
-            <Form.ErrorMessage field='cellphone' />
-            {/* <Form.Field>
-              <Form.Prefix>
-                <MdSubject className='size-5' />
-              </Form.Prefix>
-              <Form.Input
-                type='subject'
-                name='subject'
-                placeholder='Digite o assunto.'
-              />
-            </Form.Field>
-            <Form.ErrorMessage field='subject' /> */}
-            <Form.Field>
-              <Form.Prefix>
-                <Mail className='size-5' />
-              </Form.Prefix>
-              <Form.Input
-                type='message'
-                name='message'
-                placeholder='Digite sua mensagem.'
-              />
-            </Form.Field>
-            <Form.ErrorMessage field='message' />
-          </form>
+        <div className='flex flex-col items-center'>
+          <FormProvider {...createForm}>
+            <form
+              id='sendcontact'
+              onSubmit={handleSubmit(newContact)}
+              className='flex w-5/6 flex-col space-y-4 sm:w-2/4'
+            >
+              <Form.Field>
+                <Form.Prefix>
+                  <User className='size-5' />
+                </Form.Prefix>
+                <Form.Input
+                  type='name'
+                  name='name'
+                  placeholder='Digite seu nome.'
+                />
+              </Form.Field>
+              <Form.ErrorMessage field='name' />
+              <Form.Field>
+                <Form.Prefix>
+                  <AtSign className='size-5' />
+                </Form.Prefix>
+                <Form.Input
+                  type='email'
+                  name='email'
+                  placeholder='Digite seu email.'
+                />
+              </Form.Field>
+              <Form.ErrorMessage field='email' />
+              <Form.Field>
+                <Form.Prefix>
+                  <Phone className='size-5' />
+                </Form.Prefix>
+                <Form.Input
+                  type='cellphone'
+                  name='cellphone'
+                  placeholder='Digite seu celular.'
+                />
+              </Form.Field>
+              <Form.ErrorMessage field='cellphone' />
+              <Form.Field>
+                <Form.Prefix>
+                  <Mail className='size-5' />
+                </Form.Prefix>
+                <Form.Input
+                  type='message'
+                  name='message'
+                  placeholder='Digite sua mensagem.'
+                />
+              </Form.Field>
+              <Form.ErrorMessage field='message' />
+            </form>
 
-          <button
-            type='submit'
-            form='sendcontact'
-            className='py2 mt-4 flex items-center justify-center gap-2 rounded-md border border-blue-500 bg-blue-900 px-8 py-2 font-semibold text-white'
-          >
-            Enviar
-            <SendHorizonal className='size-5' />
-          </button>
-        </FormProvider>
+            <button
+              type='submit'
+              form='sendcontact'
+              className='py2 mt-4 flex items-center justify-center gap-2 rounded-md border border-blue-500 bg-blue-900 px-8 py-2 font-semibold text-white'
+            >
+              Enviar
+              <SendHorizonal className='size-5' />
+            </button>
+          </FormProvider>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
